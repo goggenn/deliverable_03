@@ -75,7 +75,7 @@ class Warrior(Character):
 
 class Mage(Character):
     def __init__(self, name: str, hp_max: int = 100,
-                 damage: int = 10, mana_max: int = 30, weapon: Weapin = None) -> None:
+                 damage: int = 10, mana_max: int = 30, weapon: Weapon = None) -> None:
         super().__init__(name, hp_max, damage, weapon)
         self.mana_max = mana_max
         self.mana = mana_max
