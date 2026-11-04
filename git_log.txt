@@ -1,0 +1,45 @@
+* f9a7e68 - Georg R. Hagen, 20 minutes ago : fjerna fil
+* 6dd343b - Magnus Bigum, 23 minutes ago : balancing patch
+* 37062bf - Magnus Bigum, 26 minutes ago : kjørte simulering
+* 9470534 - Magnus Bigum, 68 minutes ago : gjorde klar main
+* e6c26c2 - Magnus Bigum, 78 minutes ago : la til weapon i character
+* 353f81f - Georg R. Hagen, 87 minutes ago : Task 4
+*   76f78f9 - goggenn, 2 hours ago : Merge pull request #3 from goggenn/g_branch
+|\  
+| *   3e2692c - goggenn, 2 hours ago : Merge branch 'main' into g_branch
+| |\  
+| |/  
+|/|   
+* | 72867e7 - Magnus Bigum, 2 hours ago : gjorde små endringer i klassene
+| * 4587671 - Georg R. Hagen, 2 hours ago : fikset linje feil
+| *   a611b7f - Georg R. Hagen, 2 hours ago : Merge main into g_branch
+| |\  
+| |/  
+|/|   
+* | 7e30edb - Georg R. Hagen, 2 hours ago : pynt
+* | 470261f - Georg R. Hagen, 2 hours ago : Fiksa linje feil
+* |   a1901de - goggenn, 2 hours ago : Merge pull request #2 from goggenn/mbranch
+|\ \  
+| * | 65a6895 - Magnus Bigum, 2 hours ago : gjorde Battle med pep 8
+| * | 79cc1a2 - Magnus Bigum, 2 hours ago : lagde Battle-class
+| * | f14bd27 - Magnus Bigum, 3 hours ago : lagde Weapon-class
+| * | 3ed723c - Magnus Bigum, 3 hours ago : lagde Dice-class
+* | |   ce0d2a0 - goggenn, 2 hours ago : Merge pull request #1 from goggenn/g_branch
+|\ \ \  
+| |/ /  
+|/| |   
+| | * 2dd89bd - Georg R. Hagen, 2 hours ago : ?
+| |/  
+| * 113e6bf - Georg R. Hagen, 2 hours ago : Gjort Task 1, la til weapon uten å gjøre noe videre
+|/  
+* dffcff3 - Georg R. Hagen, 3 hours ago : Lagt til python filer for character, items, dice, battle
+* b9281bb - Georg R. Hagen, 3 hours ago : la til game.py
+*   e98b9c5 - Georg R. Hagen, 4 hours ago : Merge remote-tracking branch 'origin/main'
+|\  
+| * bf2d2b7 - Magnus Bigum, 4 hours ago : test
+* | 6869a17 - Georg R. Hagen, 4 hours ago : Tets
+* | d5ab128 - Georg R. Hagen, 4 hours ago : gtr
+* | 29b8b3a - Georg R. Hagen, 4 hours ago : Merge remote main
+|\| 
+| * e3c1e25 - goggenn, 4 hours ago : Initial commit
+* cb9fbdc - Georg R. Hagen, 4 hours ago : Lagd overskrift
