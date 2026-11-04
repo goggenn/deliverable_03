@@ -1,7 +1,4 @@
 
-class Character:
-    """Represents a character in the RPG"""
-
     def __init__(self, name: str, hp_max: int = 100, damage: int = 10) -> None:
         """
         Initialise the Character
@@ -15,8 +12,6 @@ class Character:
         self._hp = hp_max  # Note: _hp indicated private attribute
         self.hp_max = hp_max
         self.damage = damage
-        self.weapon = weapon
-
 
     def take_damage(self, amount: int) -> None:
         """Reduce the character's HP when taking damage"""
