@@ -3,6 +3,7 @@ from character import Character
 
 
 class Battle:
+    """Represents a Battle in the RPG"""
 
     def __init__(self, hero: Character, enemy: Character) -> None:
         """
@@ -21,10 +22,17 @@ class Battle:
         and, if still alive, the enemy attacks the hero
         """
         self.hero.attack(self.enemy)
-        if self.enemy.is_alive:
+        print(f"{self.enemy} has {self.enemy.hp} hp remianing")
+        if self.enemy.is_alive()==True:
             self.enemy.attack(self.hero)
+            print(f"{self.hero} has {self.hero.hp} hp remianing")
 
     def simulate_battle(self) -> None:
         """Plays round until either the hero or the enemy is dead"""
         while self.hero.is_alive and self.enemy.is_alive:
             self.play_round()
+        if self.hero.is_alive()==False:
+            print(f"{self.hero} has died")
+        elif self.enemy.is_alive()==False:
+            print(f"{self.enemy} has died")
+        
