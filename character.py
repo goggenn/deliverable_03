@@ -55,13 +55,16 @@ class Character:
     @property
     def is_alive(self) -> bool:
         """Check if the character is alive"""
-        return self._hp > 0
+        if self._hp > 0:
+            return True
+        else:
+            return False
 
 
 class Warrior(Character):
     def __init__(self, name: str, hp_max: int = 100,
-                 damage: int = 10, armor: int = 5) -> None:
-        super().__init__(name, hp_max, damage)
+                 damage: int = 10, armor: int = 5, weapon: Weapon = None) -> None:
+        super().__init__(name, hp_max, damage, weapon)
         self.armor = armor
 
     def take_damage(self, amount: int) -> None:
@@ -72,8 +75,8 @@ class Warrior(Character):
 
 class Mage(Character):
     def __init__(self, name: str, hp_max: int = 100,
-                 damage: int = 10, mana_max: int = 30) -> None:
-        super().__init__(name, hp_max, damage)
+                 damage: int = 10, mana_max: int = 30, weapon: Weapin = None) -> None:
+        super().__init__(name, hp_max, damage, weapon)
         self.mana_max = mana_max
         self.mana = mana_max
 
