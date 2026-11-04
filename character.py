@@ -1,4 +1,7 @@
 
+class Character:
+    """Represents a character in the RPG."""
+
     def __init__(self, name: str, hp_max: int = 100, damage: int = 10) -> None:
         """
         Initialise the Character
