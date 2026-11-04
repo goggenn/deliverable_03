@@ -1,5 +1,3 @@
-class Character:
-    """Represents a character in the RPG"""
 
 class Character:
     """Represents a character in the RPG"""
@@ -21,8 +19,8 @@ class Character:
 
 
     def take_damage(self, amount: int) -> None:
-    """Reduce the character's HP when taking damage"""
-    self._hp = max(self._hp - amount, 0)
+        """Reduce the character's HP when taking damage"""
+        self._hp = max(self._hp - amount, 0)
 
     def introduce(self) -> None:
         """Creates string that introduces character"""
@@ -38,20 +36,20 @@ class Character:
         return f"<Character name={self.name} hp={self.hp} damage={self.damage}>)"
 
     def heal(self, amount: int) -> None:
-    """Increase the character's HP when healing"""
-    self._hp = min(self._hp + amount, self.hp_max)
+        """Increase the character's HP when healing"""
+        self._hp = min(self._hp + amount, self.hp_max)
 
 
     def attack(self, target) -> None:
-    """Attack and deal damage to target character"""
-    target.take_damage(self.damage)
+        """Attack and deal damage to target character"""
+        target.take_damage(self.damage)
 
     @property
-        def hp(self) -> int:
+    def hp(self) -> int:
         """Public read-only property to inspect HP without allowing direct, unsafe edits."""
         return self._hp
-    
+
     @property
-        def is_alive(self) -> bool:
+    def is_alive(self) -> bool:
         """Check if the character is alive"""
-          return self._hp > 0
+        return self._hp > 0
