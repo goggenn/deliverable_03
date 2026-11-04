@@ -14,8 +14,6 @@ class Character:
         self._hp = hp_max  # Note: _hp indicated private attribute
         self.hp_max = hp_max
         self.damage = damage
-        
-
 
     def take_damage(self, amount: int) -> None:
         """Reduce the character's HP when taking damage"""
