@@ -7,7 +7,7 @@ class Weapon:
 
         Args:
             name (str): The name of the character.
-            damage_dice (class): Which dice that should be used for damage calculations
+            damage_dice (Dice): Which dice that should be used for damage calculations
         """
         self.name = name
         self.damage_dice = damage_dice
