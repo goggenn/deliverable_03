@@ -1,5 +1,6 @@
+
 class Character:
-    """Represents a character in the RPG"""
+    """Represents a character in the RPG."""
 
     def __init__(self, name: str, hp_max: int = 100, damage: int = 10) -> None:
         """
@@ -45,7 +46,7 @@ class Character:
     def hp(self) -> int:
         """Public read-only property to inspect HP without allowing direct, unsafe edits."""
         return self._hp
-    
+
     @property
     def is_alive(self) -> bool:
         """Check if the character is alive"""

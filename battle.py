@@ -1,11 +1,14 @@
 
+from character import Character
+
+
 class Battle:
     """Represents a Battle in the RPG"""
 
     def __init__(self, hero: Character, enemy: Character) -> None:
         """
         Initialise the Character
-    
+
         Args:
             hero (Character): The hero character
             enemy (Character): The enemy character
@@ -15,7 +18,7 @@ class Battle:
 
     def play_round(self) -> None:
         """
-        Plays a round where the hero attacks the enemy, 
+        Plays a round where the hero attacks the enemy,
         and, if still alive, the enemy attacks the hero
         """
         self.hero.attack(self.enemy)
@@ -26,7 +29,7 @@ class Battle:
 
     def simulate_battle(self) -> None:
         """Plays round until either the hero or the enemy is dead"""
-        while self.hero.is_alive()==True and self.enemy.is_alive()==True:
+        while self.hero.is_alive and self.enemy.is_alive:
             self.play_round()
         if self.hero.is_alive()==False:
             print(f"{self.hero} has died")
