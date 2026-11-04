@@ -51,3 +51,35 @@ class Character:
     def is_alive(self) -> bool:
         """Check if the character is alive"""
         return self._hp > 0
+
+
+class Warrior(Character):
+    def __init__(self, name: str, hp_max: int = 100,
+                 damage: int = 10, armor: int = 5) -> None:
+        super().__init__(name, hp_max, damage)
+        self.armor = armor
+
+    def take_damage(self, amount: int) -> None:
+        """Reduce incoming damage by armor"""
+        damage_taken = max(amount - self.armor, 0)
+        super().take_damage(damage_taken)
+
+
+class Mage(Character):
+    def __init__(self, name: str, hp_max: int = 100,
+                 damage: int = 10, mana_max: int = 30) -> None:
+        super().__init__(name, hp_max, damage)
+        self.mana_max = mana_max
+        self.mana = mana_max
+
+    def attack(self, target) -> None:
+        """Attack is using magic if enough mana is available"""
+
+        if self.mana >= 10:
+            self.mana -= 10
+            target.take_damage(self.damage * 2)
+
+        else:
+            super().attack(target)
+            self.mana = min(self.mana + 5, self.mana_max)
+        
